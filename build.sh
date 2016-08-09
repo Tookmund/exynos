@@ -21,7 +21,7 @@ make exynos_defconfig
 make LOADADDR=0x8000 uImage -j4
 make modules -j4
 make dtbs -j4
-#make modules_install -j4
+make modules_install -j4
 
 cd arch/arm/boot
 cp ../../../../kernel.its kernel.its

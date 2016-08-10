@@ -6,7 +6,8 @@ cd linux-$VERSION
 
 #make distclean -j4
 cp ../$CONF arch/arm/configs
-cp ../sd8797_uapsta.bin firmware
+mkdir -p firmware/mrvl
+cp ../sd8797_uapsta.bin firmware/mrvl
 make $CONF
 make LOADADDR=0x8000 uImage -j4
 make dtbs -j4

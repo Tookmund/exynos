@@ -2,7 +2,7 @@
 # Build exynos kernel image
 # Requires gcc-arm-gnueabihf, u-boot-tools, dtc, and vboot-kernel-tools
 
-cd arch/arm/boot
+cd linux-$VERSION/arch/arm/boot
 cp ../../../../kernel.its kernel.its
 mkimage -f kernel.its uImage
 vbutil_kernel \

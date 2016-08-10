@@ -6,11 +6,6 @@ CONF=snow_defconfig
 
 cd linux-$VERSION
 
-# To use these add snow-snow.dts to Makefile
-for i in ../snowdts/*
-do
-	cp $i arm/arch/boot/dts	
-done
 make distclean -j4
 cp ../$CONF arch/arm/configs
 make $CONF

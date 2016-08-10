@@ -2,8 +2,6 @@
 # Build exynos kernel image
 # Requires gcc-arm-gnueabihf, u-boot-tools, dtc, and vboot-kernel-tools
 
-CONF=snow_defconfig
-
 cd linux-$VERSION
 
 make distclean -j4

@@ -2,7 +2,7 @@ Set of scripts to build samsung arm chromebook images
 
 Get required packages listed in build.sh
 
-Download linux as linux-version and u-boot as u-boot
+git submodule init
 
 Run createpart.sh to set up a device
 

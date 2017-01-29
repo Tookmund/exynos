@@ -9,6 +9,6 @@ export CONF=snow_defconfig
 export ARCH=arm
 export CROSS_COMPILE=arm-linux-gnueabihf-
 
-#sh uboot.sh
+sh uboot.sh
 sh linux.sh
 sh vboot.sh

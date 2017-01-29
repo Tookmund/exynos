@@ -1,3 +1,7 @@
 [submodule "u-boot"]
 	path = u-boot
 	url = git://git.denx.de/u-boot
+[submodule "linux-stable"]
+	path = linux-stable
+	url = https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable
+	branch = linux-4.9.y

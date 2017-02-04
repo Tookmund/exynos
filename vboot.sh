@@ -2,7 +2,7 @@
 # Build exynos kernel image
 # Requires gcc-arm-gnueabihf, u-boot-tools, dtc, and vboot-kernel-tools
 
-cd linux-$VERSION/arch/arm/boot
+cd linux-stable/arch/arm/boot
 cp ../../../../kernel.its kernel.its
 mkimage -f kernel.its uImage
 vbutil_kernel \
@@ -13,6 +13,6 @@ vbutil_kernel \
         --config ../../../../cmdline \
         --vmlinuz uImage \
 	--bootloader ../../../../u-boot/u-boot-dtb.bin \
-        --pack chromeos-$VERSION-$EXTRAVERSION.kpart
-cp chromeos-$VERSION-$EXTRAVERSION.kpart ../../../..
+        --pack chromeos-$EXTRAVERSION.kpart
+cp chromeos-$EXTRAVERSION.kpart ../../../..
 

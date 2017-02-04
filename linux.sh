@@ -2,7 +2,7 @@
 # Build exynos kernel image
 # Requires gcc-arm-gnueabihf, u-boot-tools, dtc, and vboot-kernel-tools
 
-cd linux-$VERSION
+cd linux-stable
 
 #make distclean -j4
 cp ../$CONF arch/arm/configs
